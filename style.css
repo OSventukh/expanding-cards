@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	width: 90vw;
+	margin: 0 auto;
+	gap: 20px;
+}
+
+.card {
+	position: relative;
+	height: 80vh;
+	flex: 0.5;
+	border-radius: 20px;
+	transition: 0.5s ease-in;
+	cursor: pointer;
+}
+
+.card h3 {
+	position: absolute;
+	margin: 0;
+	bottom: 30px;
+	left: 30px;
+	font-family: Verdana, sans-serif;
+	color: #fff;
+	font-size: 2em;
+	opacity: 0;
+	transition: 0.5s ease-in 0.3s;
+}
+
+.card.active {
+	flex: 5;
+}
+
+.card.active h3 {
+	opacity: 0.8;
+}
+
+.kyiv {
+	background: url(img/kyiv.jpg) center center/cover no-repeat;
+}
+
+.vinnytsia {
+	background: url(img/vinnitsya.jpg) center center/cover no-repeat;
+}
+
+.lviv {
+	background: url(img/lviv.jpeg) center center/cover no-repeat;
+}
+
+.odesa {
+	background: url(img/odesa.jpg) center center/cover no-repeat;
+}
